@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-wrap: pretty;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html {
@@ -190,12 +190,10 @@ button {
   text-align: center;
 }
 
-.dflex-col-start {
+.dflex-between {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-align: left;
 }
 
 .dflex-start {
@@ -243,24 +241,27 @@ footer {
 }
 
 .navinfoBody{
-  /* margin-bottom: 3rem; */
-  height: 3rem;
+  padding: 1.5rem;
+  margin: 0rem 10rem 0rem 10rem;
 }
+
+.iconsBox{
+  margin-left: 8rem;
+}
+
 .emailBox{
-  padding: 0.2rem 10rem;
+  margin-left: 8rem;
 }
 
 .emailBox h4 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 420;
   color: #ffffff;
-  margin: 0px 16px 0px 0px;
+  margin: 0px 8px 0px 0px;
 }
 
 .aboutBox{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 4rem;
 }
 .aboutBox ul li a {
   font-family: "Poppins", sans-serif;
@@ -270,17 +271,21 @@ footer {
 }
 
 .demoBox button {
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 550;
   color: #FFFFFF;
-  background-color: #3675b1;
-  padding: 10px 20px;
+  background: linear-gradient(to right, #1d5d9a, #4ca0e0, #1d5d9a);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  padding: 10px 15px;
   border-radius: 3px 3px;
   border: none;
 }
 
 .logoBox img {
   width: auto;
-  height: 40px; 
+  height: 30px; 
 }
 
 /* Navbar code */
