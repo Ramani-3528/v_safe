@@ -48,13 +48,13 @@ h4,
 h5,
 h6,
 p {
-  text-wrap: balance;
+  /* text-wrap: balance; */
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 36px;
-  font-weight: 450;
+  font-size: 33px;
+  font-weight: 500;
   color: #6C757D;
   text-align: center;
 }
@@ -110,21 +110,21 @@ span {
 button {
   font-size: 20px;
   color: #FFFFFF;
-  background-color: #3675b1;
-  padding: 10px 20px;
+  background: linear-gradient(to right, #1d5d9a, #4ca0e0, #1d5d9a);
+  padding: 10px 10px;
   border-radius: 3px 3px;
   border: none;
 }
 
 .paragraph {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #6C757D;
   margin: 0px 0px 24px;
 }
 
 .componentSpacing {
-  /* padding: 2rem 0rem; */
+  padding: 2rem 0rem;
 }
 
 .screensize1 {
@@ -236,7 +236,7 @@ footer {
 
 .navIcons {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   color: #ffffff;
 }
 
@@ -274,9 +274,6 @@ footer {
   font-size: 12px;
   font-weight: 550;
   color: #FFFFFF;
-  background: linear-gradient(to right, #1d5d9a, #4ca0e0, #1d5d9a);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 3px 3px;
@@ -351,14 +348,23 @@ footer {
 
 /* Products code */
 
+.products{
+  padding-top: 3rem;
+}
+
 .pictureBox img {
-  height: 370px;
-  width: 546px;
+  height: 340px;
+  width: auto;
+  padding-left: 2rem;
 }
 
 .homeBoxImage {
   width: 91px;
   aspect-ratio: 3/2;
+}
+
+.featureBox{
+  text-align: left;
 }
 
 .doorLockBody{
@@ -369,20 +375,26 @@ footer {
 /* Products code */
 
 /* DoorLock code */
+
+.doorLockBox{
+  padding-left: 13rem;
+}
+
 .lockerBox img {
-  height: 290px;
-  width: 320px;
+  height: 390px;
+  width: auto;
 }
 
 /* DoorLock code */
 
 /* Booking code */
 .bg-gradient-radial {
-  background-image: radial-gradient(circle, rgb(49, 150, 202) 0%, rgb(29, 93, 154) 100%) !important;
+  background: radial-gradient(circle, rgb(49, 150, 202) 0%, rgb(29, 93, 154) 100%) !important;
 }
 
 .bookingBox h2 {
   color: #FFFFFF;
+  padding-top: 3rem;
 }
 .bookingBox h4{
   font-size: 20px;
@@ -396,6 +408,7 @@ footer {
 }
 
 .secImage{
+  padding-top: 3rem;
   background-color: #FFFFFF;
 }
 
