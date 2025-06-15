@@ -403,13 +403,17 @@ footer {
   text-align: center;
 }
 
-.fstImage{
-  background-color: #FFFFFF;
+.productCard {
+  background-color: #ffffff; /* Replace with your desired color */
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px; /* Adjust spacing between cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional for depth */
+  text-align: center; /* Center image if needed */
 }
 
 .secImage{
-  padding-top: 3rem;
-  background-color: #FFFFFF;
+  border: #6C757D;
 }
 
 .bookDemoBox {
