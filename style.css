@@ -412,8 +412,13 @@ footer {
   text-align: center; /* Center image if needed */
 }
 
-.secImage{
-  border: 3px solid #6C757D;
+.homeLockerBox img{
+  height: 80px;
+  width: auto;
+}
+
+.fstImage{
+  border: 5px solid #6c757d52;
 }
 
 .bookDemoBox {
