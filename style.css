@@ -133,7 +133,7 @@ button {
 }
 
 .screensize2 {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -142,24 +142,11 @@ button {
   margin: auto;
 }
 
-.grid-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 1rem;
-}
-
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 0rem 3rem;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  padding: 3rem;
 }
 
 .grid-4 {
@@ -201,7 +188,6 @@ button {
   justify-content: start;
   align-items: center;
 }
-
 
 /* :::PARENT CONTAINER Code Starts here::: */
 
@@ -258,6 +244,19 @@ footer {
   font-weight: 420;
   color: #ffffff;
   margin: 0px 8px 0px 0px;
+}
+
+#iconToggle {
+  cursor: pointer;
+  display: none;
+}
+
+.aboutBox .hamburger {
+  font-size: 28px;
+  color: #000000a5;
+  padding: 3px 19px 3px 19px;
+  border-radius: 0.55rem;
+  display: none;
 }
 
 .aboutBox{
@@ -355,7 +354,6 @@ footer {
 .pictureBox img {
   height: 340px;
   width: auto;
-  padding-left: 2rem;
 }
 
 .homeBoxImage {
@@ -369,15 +367,15 @@ footer {
 
 .doorLockBody{
   border-top: 1px solid rgb(84, 82, 82);
-  padding: 3rem 0rem 4rem;
+  /* padding: 3rem 0rem 4rem; */
 }
 
 /* Products code */
 
 /* DoorLock code */
 
-.doorLockBox{
-  padding-left: 13rem;
+.doorLockBody{
+  padding: 4rem 0rem 6rem;
 }
 
 .lockerBox img {
@@ -426,7 +424,6 @@ footer {
   width: 397px;
 }
 
-
 /* Booking code */
 
 /* Customer code */
@@ -444,7 +441,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 1rem 0rem 13rem 0rem;
+  padding: 1rem 0rem 5rem 0rem;
 }
 
 .demoBox p{
@@ -455,13 +452,16 @@ footer {
 }
 
 .reviewBox h4{
+  font-size: 12px;
   font-weight: 400;
+  text-align: left;
 }
 
 .reviewBox img{
   height: 50px;
   width: auto;
 }
+
 .reviewBox i{
   color: rgb(248, 187, 32);
 }
@@ -470,6 +470,7 @@ footer {
 
 /* :::FOOTER Code Starts here::: */
 /* Contact code */
+
 .appstoreBox img {
   width: 75%;
   aspect-ratio: 3 / 1;
@@ -502,7 +503,6 @@ footer {
 
 .copyrightsBox p {
   font-size: 13px;
-  margin: 0px 0px 16px;
   padding: 1rem;
   text-align: center;
 }
@@ -518,3 +518,62 @@ footer {
 
 /* Contact code */
 /* :::FOOTER Code Ends here::: */
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+@media (max-width:576px){
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* padding: 0rem 1rem; */
+  }
+  .navBody{
+    display: none;
+  }
+  .links {
+    flex-direction: column;
+    display: none;
+    justify-content: left;
+    align-items: start;
+  }
+
+  #iconToggle:checked~.links {
+    display: flex;
+  }
+  .aboutBox .hamburger {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    cursor: pointer;
+  }
+
+  .aboutBox li{
+    padding-bottom: 1rem;
+    align-items: left;
+    justify-content: left;
+  }
+  #iconToggle:checked~.navButton {
+    display: none;
+  }
+  .bg-gradient {
+    background-image: linear-gradient(45deg, #3196ca 0%, #1d5d9a 100%);
+    padding: 6rem 4rem 5rem 4rem;
+    margin: 3rem;
+  }
+  .securityBody i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .border{
+    border-bottom: 3px solid #FFFFFF;
+  }
+  .securityBody p{
+    font-size: 20px;
+  }
+}
