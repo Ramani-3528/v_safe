@@ -368,7 +368,6 @@ footer {
 
 .doorLockBody{
   border-top: 0.1rem solid rgb(84, 82, 82);
-  /* padding: 3rem 0rem 4rem; */
 }
 
 /* Products code */
@@ -412,7 +411,7 @@ footer {
 }
 
 .homeLockerBox img{
-  height: 8rem;
+  height: 5.9rem;
   width: auto;
 }
 
@@ -420,10 +419,10 @@ footer {
   border: 0.5rem solid #6c757d52;
 }
 
-.bookDemoBox {
-  height: 39.7rem;
-  width: auto;
-}
+/* .bookDemoBox img{
+  height: 50rem;
+  width: 60rem;
+} */
 
 /* Booking code */
 
