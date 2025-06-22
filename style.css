@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-wrap: pretty;
-  /* border: 0.1rem solid red; */
+  border: 0.1rem solid red;
 }
 
 html {
@@ -48,7 +48,7 @@ h4,
 h5,
 h6,
 p {
-  /* text-wrap: balance; */
+  text-wrap: balance;
 }
 
 h2 {
@@ -156,9 +156,9 @@ button {
   padding: 1rem;
 }
 
-.grid-5{
+.grid-3{
   display: grid;
-  grid-template-columns: 0.5fr 0.6fr 1fr;
+  grid-template-columns: 0.5fr 0.8fr 1fr;
   gap: 1rem;
   padding: 1rem;
 }
@@ -390,12 +390,15 @@ footer {
   background: radial-gradient(circle, rgb(49, 150, 202) 0%, rgb(29, 93, 154) 100%) !important;
 }
 
+.bookingContainer{
+  padding: 4rem;
+}
+
 .bookingBox h2 {
   color: #FFFFFF;
-  padding-top: 3rem;
 }
-.bookingBox h4{
-  font-size: 2rem;
+.bookingBox p{
+  font-size: 1.6rem;
   color: #F8F9FA;
   font-weight: 300;
   text-align: center;
@@ -410,6 +413,10 @@ footer {
   text-align: center;
 }
 
+.homeLockerBox{
+  padding-left: 6rem;
+}
+
 .homeLockerBox figure img{
   height: 9rem;
   width: auto;
@@ -422,6 +429,35 @@ footer {
 .bookDemoBox figure img{
   width: 100%;
   aspect-ratio: 2.9/3;
+}
+
+.liveDemoBox{
+  padding: 3rem;
+  margin: 0rem 7rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1rem 17rem;
+  margin: 0.7rem 0rem;
+  font-size: 1.4rem;
+  background-color: #f6f9fc;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+#message{
+  padding-bottom: 9rem;
+}
+
+input::selection{
+  border-color: #6C757D;
 }
 
 /* Booking code */

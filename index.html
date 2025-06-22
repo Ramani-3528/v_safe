@@ -172,12 +172,12 @@
                     <div class="bookingBlock"><!-- 5.column -->
                         <div class="bookingBox"><!-- 6.subColumn -->
                             <h2>Book Your Free Live Demo</h2><!-- 7.Content Container -->
-                            <h4>We are offering a free LIVE demo to showcase our innovative features.
+                            <p>We are offering a free LIVE demo to showcase our innovative features.
                                 Book your demo now to see how our products can enhance your privacy and security.</h4>
                         </div>
                     </div>
                 </div>
-                <div class="homeLockerBody grid-5"><!-- 4.Row -->
+                <div class="homeLockerBody grid-3"><!-- 4.Row -->
                     <div class="homeLcokerBlock dflex"><!-- 5.column -->
                         <div class="homeLockerBox"><!-- 6.subColumn -->
                             <figure class="productCard fstImage"><img src="./assets/images/home-boxed.png" alt="fstImage"></figure>
@@ -190,7 +190,40 @@
                         </div>
                     </div>
                     <div class="liveDemoBlock"><!-- 5.column -->
-                        <div class="liveDemoBox"></div><!-- subColumn -->
+                        <div class="liveDemoBox dflex"><!-- subColumn -->
+                            <form action="">
+                                <div>
+                                    <input type="text" placeholder="Your Name *" required>
+                                </div>
+                                <div>
+                                    <input type="text" name="email" placeholder="Your Email *" required>
+                                </div>
+                                <div>
+                                    <input type="tel" name="mobile" placeholder="Your Mobile Number *" required>
+                                </div>
+                                <div>
+                                    <select name="select" id="select" required>
+                                        <option hidden value="product">Select Product *</option>
+                                        <option value="door">Door Lock</option>
+                                        <option value="lock">Smart Locker</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="select" id="select">
+                                        <option hidden value="product">Select Platform *</option>
+                                        <option value="door">Google Meet</option>
+                                        <option value="lock">Zoom</option>
+                                        <option value="lock">Whatsapp Call</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="date">
+                                </div>
+                                <div>
+                                    <input type="text" id="message">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
