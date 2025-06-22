@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-wrap: pretty;
-  border: 0.1rem solid red;
+  /* border: 0.1rem solid red; */
 }
 
 html {
@@ -158,7 +158,7 @@ button {
 
 .grid-3{
   display: grid;
-  grid-template-columns: 0.5fr 0.8fr 1fr;
+  grid-template-columns: 0.4fr 1fr 0.8fr;
   gap: 1rem;
   padding: 1rem;
 }
@@ -175,12 +175,6 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.dflex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .dflex-start {
@@ -387,16 +381,21 @@ footer {
 
 /* Booking code */
 .bg-gradient-radial {
-  background: radial-gradient(circle, rgb(49, 150, 202) 0%, rgb(29, 93, 154) 100%) !important;
+  background: radial-gradient(circle, rgb(49, 150, 202) 0%, rgb(29, 93, 154) 100%);
 }
 
 .bookingContainer{
-  padding: 4rem;
+  padding: 4rem 0rem;
+}
+
+.homeLockerBody{
+  padding-left: 8rem;
 }
 
 .bookingBox h2 {
   color: #FFFFFF;
 }
+
 .bookingBox p{
   font-size: 1.6rem;
   color: #F8F9FA;
@@ -413,10 +412,6 @@ footer {
   text-align: center;
 }
 
-.homeLockerBox{
-  padding-left: 6rem;
-}
-
 .homeLockerBox figure img{
   height: 9rem;
   width: auto;
@@ -426,14 +421,21 @@ footer {
   border: 0.5rem solid #6c757d52;
 }
 
+.bookDemoBox{
+  padding-top: 6rem;
+}
+
 .bookDemoBox figure img{
   width: 100%;
   aspect-ratio: 2.9/3;
 }
 
+.liveDemoBlock{
+  padding: 0rem 9rem 0rem;
+}
+
 .liveDemoBox{
   padding: 3rem;
-  margin: 0rem 7rem;
   background-color: #FFFFFF;
   border-radius: 1rem;
 }
