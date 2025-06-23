@@ -183,6 +183,12 @@ button {
   align-items: center;
 }
 
+.dflex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* :::PARENT CONTAINER Code Starts here::: */
 
 header {
@@ -253,19 +259,11 @@ footer {
   display: none;
 }
 
-.aboutBox{
-  margin-left: 18rem;
-}
-
 .aboutBox ul li a {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: #000000;
   padding: 0rem 1rem;
-}
-
-.demoBox{
-  margin-left: 3rem;
 }
 
 .demoBox button {
